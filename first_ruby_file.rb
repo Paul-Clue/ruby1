@@ -34,4 +34,4 @@ end
 
 num_arr = [3, 2, 4, 9, 1, 15, 2000, 14]
 # print bubble_sort_by(num_arr) {|first, second| first <=> second}
-print bubble_sort_by(num_arr) { |first, second| second <=> first }
+print bubble_sort_by(num_arr) { |first, second| first <=> second }
