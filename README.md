@@ -2,7 +2,7 @@
 
 ## Brief description
 
--In this project we implemented the bubble sort algorithim, bubble_sort, using Ruby. We also implemented another algorithm, bubble_sort_by, that does bubble sort. However, bubble_sort_by uses the ruby keyword "yield" to enable bubble_sort_by to accept a block and its return value. The return value is used to for sorting the elements passed to bubble_sort_by.
+-In this project we implemented the bubble sort algorithim, bubble_sort, using Ruby. We also implemented another algorithm, bubble_sort_by, that does bubble sort. However, bubble_sort_by uses the ruby keyword "yield" to enable bubble_sort_by to accept a block and its return value. The return value is used for sorting the elements passed to bubble_sort_by.
 
 ## Screenshot
 
