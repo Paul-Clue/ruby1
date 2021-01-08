@@ -22,7 +22,11 @@ def bubble_sort_by(array)
   array.length.times do
     array.each_with_index do |v, j|
       break if j + 1 == array.length
-      next unless yield(v, array[j + 1]) == 1
+
+      var = yield(v, array[j + 1]) <=> 1
+      var2 = (var > -1)
+
+      next unless var2 == true
 
       temp = array[j]
       array[j] = array[j + 1]
@@ -33,5 +37,6 @@ def bubble_sort_by(array)
 end
 
 num_arr = [3, 2, 4, 9, 1, 15, 2000, 14]
-# print bubble_sort_by(num_arr) {|first, second| first <=> second}
-print bubble_sort_by(num_arr) { |first, second| first <=> second }
+str_arr = %w[hiya hello hi hey h]
+print bubble_sort_by(num_arr) { |first, second| first - second }
+print bubble_sort_by(str_arr) { |first, second| first.length - second.length }
